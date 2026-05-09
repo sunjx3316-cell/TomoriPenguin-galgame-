@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我想变成凑企鹅</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        
+        <!-- 游戏开场起名界面 -->
+        <div id="name-input-screen">
+            <div class="name-box">
+                <h2>请输入你的名字</h2>
+                <input type="text" id="player-name-input" placeholder="输入名字 (默认: 我)" value="我">
+                <button id="btn-start-game">开始游戏</button>
+            </div>
+        </div>
+
+        <!-- 顶部的企鹅度进度条 -->
+        <div id="status-bar">
+            <div class="status-label">企鹅度 (Penguin Degree)</div>
+            <div class="progress-bar-bg">
+                <div id="penguin-progress" style="width: 20%;"></div>
+            </div>
+            <div id="penguin-text">20%</div>
+        </div>
+
+        <!-- 背景与立绘区 -->
+        <div id="visual-area">
+            <img id="bg-img" src="" alt="">
+            <!-- 预留图片加载的 img，暂时不指定 src -->
+            <img id="sprite-img" src="" alt="">
+        </div>
+
+        <!-- 屏幕中央的选项按钮组区 (已移除，移入对话框内) -->
+
+        <!-- 底部的标准 Galgame 文本对话框 -->
+        <div id="dialogue-box">
+            <div id="speaker-name"></div>
+            <div id="dialogue-text"></div>
+            <!-- 选项现在放在对话框内部 -->
+            <div id="inline-options-container" class="hidden"></div>
+            <div id="next-indicator">▼</div>
+        </div>
+
+        <!-- 心理干预复盘报告模态弹窗 -->
+        <div id="report-modal" class="hidden">
+            <div class="modal-content">
+                <h2 class="modal-title">⚠️ 心理干预失败报告</h2>
+                <div class="report-section">
+                    <h3>❌ 你的错误行为：</h3>
+                    <p id="report-behavior"></p>
+                </div>
+                <div class="report-section">
+                    <h3>💔 对灯造成的负面影响：</h3>
+                    <p id="report-impact"></p>
+                </div>
+                <div class="report-section">
+                    <h3>✅ 正确的心理学做法：</h3>
+                    <p id="report-solution"></p>
+                </div>
+                <button id="btn-restart">重新开始干预</button>
+            </div>
+        </div>
+        
+        <!-- 隐藏的语音播放器 -->
+        <audio id="voice-player"></audio>
+
+        <!-- 结局视频播放器 -->
+        <video id="cg-video" class="hidden" controls></video>
+    </div>
+
+    <!-- 加上 ?v=2 强制浏览器刷新缓存，获取最新代码 -->
+    <script src="js/script.js?v=2"></script>
+    <script src="js/engine.js?v=2"></script>
+</body>
+</html>
