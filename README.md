@@ -43,7 +43,8 @@ TomoriPenguin/
 ## 📝 剧本说明
 
 游戏剧本存放于 `js/script.js` 中，采用 JSON 树状节点结构编写。你可以通过修改该文件轻松扩展剧情、添加新的选项分支或调整企鹅度数值。
-##https://sunjx3316-cell.github.io/TomoriPenguin-galgame-/这是游戏链接，点击即玩。
+##https://sunjx3316-cell.github.io/TomoriPenguin-galgame-/
+这是游戏链接，点击即玩。
 ## ⚖️ 声明
 
 本项目为同人衍生游戏，角色版权归属原企划方（BanG Dream! Project）。游戏内的心理学分析仅供娱乐和参考，不构成专业的医疗建议。
